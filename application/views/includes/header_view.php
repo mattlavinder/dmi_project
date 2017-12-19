@@ -19,10 +19,7 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=base_url()?>order/start">Order</a>
+                        <a class="nav-link" href="<?=base_url()?>order/new_order">Order</a>
                     </li>
                 </ul>
                 <a href="" class="my-auto btn btn-primary">Login</a>
