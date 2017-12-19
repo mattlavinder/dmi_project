@@ -79,7 +79,7 @@ $db['default'] = array(
 	'username' => 'cjcounsell',
 	'password' => 'Shn8K6xSnZOl0L3u',
 	'database' => 'coffee_shop',
-	'dbdriver' => 'mysql',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
