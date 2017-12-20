@@ -14,4 +14,10 @@ class Order_item_model extends CI_Model
         $id = $this->db->insert_id();
         return $id;
     }
+
+    // Remove given item from order
+    public function remove_order_item($order_item_id)
+    {
+        $this->db->delete('order_items', array('id' => $order_item_id));
+    }
 }

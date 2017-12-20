@@ -1,11 +1,6 @@
 <?php
 class Order_model extends CI_Model
 {
-    public function __construct()
-    {
-        $this->load->database();
-    }
-
     // Get order by given order_id
     public function get_order($order_id = FALSE)
     {
@@ -20,9 +15,7 @@ class Order_model extends CI_Model
         $data = array(
                 'payment_types_id' => '1',
                 'phone_number' => $phone_number,
-                'order_status_id' => '',
                 'pickup_datetime' => $pickup,
-                'total' => '',
                 'is_paid' => '0',
                 'created_at' => date('Y-m-d H:i:s')
         );
