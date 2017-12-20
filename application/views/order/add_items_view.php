@@ -20,7 +20,8 @@
                             </h4>
                             <h5>$<?=$item['cost']?></h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                            <a href="<?=base_url()?>order/add_item_to_order/<?=$order_id?>/<?=$item['id']?>"
+                               class="btn btn-primary">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -37,6 +38,9 @@
                             <th>Price</th>
                         </tr>
                     </thead>
+                    <tbody>
+
+                    </tbody>
                 </table>
             </div>
         </div>

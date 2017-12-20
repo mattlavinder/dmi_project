@@ -1,6 +1,6 @@
 <?php
 
-class Items_model extends CI_Model
+class Item_model extends CI_Model
 {
     // Get all items with the given category
     public function get_items($category = FALSE)
