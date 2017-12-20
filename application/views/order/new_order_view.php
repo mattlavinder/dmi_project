@@ -2,14 +2,12 @@
     <div class="col-3"></div>
     <div class="col-6">
         <h1 class="h1 text-center">Enter Pickup Info</h1>
-        <?php
-
-        ?>
-        <form method="get" action="<?=base_url()?>order/shop">
+        <?=validation_errors('<div class="alert alert-danger">', '</div>');?>
+        <?=form_open('order/new_order')?>
             <div class="form-group row">
                 <label for="phoneInput" class="col-sm-3 col-form-label">Phone Number</label>
                 <div class="col-sm-9">
-                    <input type="text" name="phone_number" class="form-control" id="phoneInput" required placeholder="e.g. 123-456-7890">
+                    <input type="text" name="phone_number" class="form-control" id="phoneInput" required placeholder="e.g. 1234567890">
                 </div>
             </div>
             <div class="form-group row">
