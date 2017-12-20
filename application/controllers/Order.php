@@ -55,8 +55,13 @@ class Order extends CI_Controller
             $data['items'] = $this->item_model->get_items($this->input->get('category'));
         }
 
+//        $order_items = $this->db->select('item_id')->where('order_id', $order_id)->get('order_items');
+        $sql = $this->db->query('SELECT name, cost FROM items I, order_items OI WHERE I.id = OI.item_id AND OI.order_id = '.$order_id.';');
+        $order_items = $sql->result_array();
+
         $data['categories'] = $this->category_model->get_categories();
         $data['order_id'] = $order_id;
+        $data['order_items'] = $order_items;
 
         $this->load->view('includes/header_view');
         $this->load->view('order/add_items_view', $data);

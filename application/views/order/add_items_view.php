@@ -39,7 +39,12 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                        <?php foreach ($order_items as $order_item): ?>
+                        <tr>
+                            <td><?=$order_item['name']?></td>
+                            <td><?=$order_item['cost']?></td>
+                        </tr>
+                        <?php endforeach;?>
                     </tbody>
                 </table>
             </div>
